@@ -36,7 +36,7 @@ Untuk memulai membuat kode php, perlu disiapkan web server dan interpreter PHP t
 ## PHP Dasar
 <p>Buat file baru dengan nama php_dasar.php pada directory tersebut. Kemudian buat kode seperti berikut.
 
-'''html
+```bash
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,7 +52,7 @@ Untuk memulai membuat kode php, perlu disiapkan web server dan interpreter PHP t
   ?>
 </body>
 </html>
-'''
+```
 
 <p>Kemudian untuk mengakses hasilnya melalui URL: http://localhost/Lab2Web/php_dasar.php
 
@@ -61,7 +61,7 @@ Untuk memulai membuat kode php, perlu disiapkan web server dan interpreter PHP t
 ## Variable PHP
 <p>Menambahkan variable pada program.
 
-'''html
+```bash
 <h2>Menggunakan Variable</h2>
 <?php
 $nim = "004285601";
@@ -69,20 +69,20 @@ $nama = "Bilal";
 echo "NIM : " . $nim . "<br>";
 echo "Nama : $nama";
 ?>
-'''
+```
 
 ![Variable PHP](img/php_variable.png)
 
 ## Predefine Variable $_GET
 <p>Buat file 'latihan2.php' dalam direktori Lab2Web. lalu masukan kode berikut.
 
-'''html
+```bash
 <h2>Predefine Variable $_GET</h2>
 
 <?php
 echo "Selamat Datang " . $_GET['nama'];
 ?>
-'''
+```
 
 <p>Untuk mengaksesnya gunakan URL: http://localhost/Lab2Web/latihan2.php?nama=Bilal 
 
@@ -91,7 +91,7 @@ echo "Selamat Datang " . $_GET['nama'];
 ## Membuat Form Input
 - Buat file 'latihan3.php' didalam direktori Lab2Web, Kemudian tambahkan kode berikut.
 
-'''html
+```bash
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -112,7 +112,7 @@ echo "Selamat Datang " . $_GET['nama'];
   ?>
 </body>
 </html>
-'''
+```
 
 - Lalu inputkan sesuatu dalam kolom form tersebut, kemudian klik Kirim.
 - Maka, hasilnya akan seperti berikut:
@@ -122,13 +122,13 @@ echo "Selamat Datang " . $_GET['nama'];
 ## Operator
 <p>Masukan kode berikut.
 
-'''html
+```bash
 $gaji = 1000000;
 $pajak = 0.1;
 $thp = $gaji - ($gaji*$pajak);
 echo "Gaji sebelum pajak = Rp. $gaji <br>";
 echo "Gaji yang dibawa pulang = Rp. $thp";
-'''
+```
 
 <p>Maka, hasilnya akan seperti berikut.
 
@@ -137,7 +137,7 @@ echo "Gaji yang dibawa pulang = Rp. $thp";
 ## Kondisi IF
 <p>Masukan kode berikut.
 
-'''html
+```bash
 $nama_hari = date("l");
 if ($nama_hari == "Sunday") {
 echo "Minggu";
@@ -146,7 +146,7 @@ echo "Senin";
 } else {
 echo "Selasa";
 }
-'''
+```
 
 <p>Maka, hasilnya akan seperti berikut.
 
@@ -155,7 +155,7 @@ echo "Selasa";
 ## Kondisi Switch
 <p>Masukan kode berikut.
 
-'''html
+```bash
 $nama_hari = date("l");
 switch ($nama_hari) {
   case "Sunday":
@@ -170,7 +170,7 @@ switch ($nama_hari) {
   default:
 echo "Sabtu";
 }
-'''
+```
 
 <p>Maka, hasilnya akan seperti berikut.
 
@@ -179,7 +179,7 @@ echo "Sabtu";
 ## Perulangan FOR
 <p>Masukan kode berikut.
 
-'''html
+```bash
 echo "Perulangan 1 sampai 10 <br />";
 for ($i=1; $i<=10; $i++) {
 echo "Perulangan ke: " . $i . '<br />';
@@ -188,7 +188,7 @@ echo "Perulangan Menurun dari 10 ke 1 <br />";
 for ($i=10; $i>=1; $i--) {
 echo "Perulangan ke: " . $i . '<br />';
 }
-'''
+```
 
 <p>Maka, hasilnya akan seperti berikut.
 
@@ -197,14 +197,14 @@ echo "Perulangan ke: " . $i . '<br />';
 ## Perulangan While
 <p>Masukan kode berikut.
 
-'''html
+```bash
 echo "Perulangan 1 sampai 10 <br />";
 $i=1;
 while ($i<=10) {
 echo "Perulangan ke: " . $i . '<br />';
 $i++;
 }
-'''
+```
 
 <p>Maka, hasilnya akan seperti berikut.
 
@@ -213,14 +213,14 @@ $i++;
 ## Perulangan Do While
 <p>Masukan kode berikut.
 
-'''html
+```bash
 echo "Perulangan 1 sampai 10 <br />";
 $i=1;
 do {
 echo "Perulangan ke: " . $i . '<br />';
 $i++;
 } while ($i<=10);
-'''
+```
 
 <p>Maka, hasilnya sama saja dengan perulangan sebelumnya.
 
@@ -231,7 +231,7 @@ $i++;
 - Buat file index.php dalam direktori Praktikum agar terlihat rapih
 - Masukan kode berikut.
 
-'''html
+```bash
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -354,12 +354,12 @@ $i++;
     ?>
   </body>
 </html>
-'''
+```
 
 - Kemudian buat file style.css didalam folder yang sama agar mudah diakses
 - Lalu, masukan kode berikut.
 
-'''html
+```bash
 * {
     font-family: sans-serif;
     margin: 0;
@@ -419,7 +419,7 @@ td {
 span {
     color: red;
 }
-'''
+```
 
 - Maka, hasilnya akan seperti berikut.
 
