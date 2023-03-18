@@ -25,7 +25,7 @@ Untuk memulai membuat kode php, perlu disiapkan web server dan interpreter PHP t
 6. Kemudian uji coba apakah web server sudah bekerja dengan baik dengan mengetik http://127.0.0.1 atau http://localhost
 
 ## Memulai PHP
-<p>Buat folder 'Lab2Web' pada root direktori web server (C:\xampp\htdocs)
+<p>Buat folder `Lab2Web` pada root direktori web server (C:\xampp\htdocs)
 
 ![Buat Folder](img/buat_folder.png)
 
@@ -36,7 +36,7 @@ Untuk memulai membuat kode php, perlu disiapkan web server dan interpreter PHP t
 ## PHP Dasar
 <p>Buat file baru dengan nama php_dasar.php pada directory tersebut. Kemudian buat kode seperti berikut.
 
-```bash
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,7 +61,7 @@ Untuk memulai membuat kode php, perlu disiapkan web server dan interpreter PHP t
 ## Variable PHP
 <p>Menambahkan variable pada program.
 
-```bash
+```html
 <h2>Menggunakan Variable</h2>
 <?php
 $nim = "004285601";
@@ -74,9 +74,9 @@ echo "Nama : $nama";
 ![Variable PHP](img/php_variable.png)
 
 ## Predefine Variable $_GET
-<p>Buat file 'latihan2.php' dalam direktori Lab2Web. lalu masukan kode berikut.
+<p>Buat file `latihan2.php` dalam direktori Lab2Web. lalu masukan kode berikut.
 
-```bash
+```html
 <h2>Predefine Variable $_GET</h2>
 
 <?php
@@ -89,9 +89,9 @@ echo "Selamat Datang " . $_GET['nama'];
 ![Predefine Variable](img/predefine_variable.png)
 
 ## Membuat Form Input
-- Buat file 'latihan3.php' didalam direktori Lab2Web, Kemudian tambahkan kode berikut.
+- Buat file `latihan3.php` didalam direktori Lab2Web, Kemudian tambahkan kode berikut.
 
-```bash
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -120,9 +120,9 @@ echo "Selamat Datang " . $_GET['nama'];
 ![Form Input](img/form_input.png)
 
 ## Operator
-<p>Masukan kode berikut.
+- Masukan kode berikut.
 
-```bash
+```html
 $gaji = 1000000;
 $pajak = 0.1;
 $thp = $gaji - ($gaji*$pajak);
@@ -130,14 +130,14 @@ echo "Gaji sebelum pajak = Rp. $gaji <br>";
 echo "Gaji yang dibawa pulang = Rp. $thp";
 ```
 
-<p>Maka, hasilnya akan seperti berikut.
+- Maka, hasilnya akan seperti berikut.
 
 ![Operator](img/operator.png)
 
 ## Kondisi IF
-<p>Masukan kode berikut.
+- Masukan kode berikut.
 
-```bash
+```html
 $nama_hari = date("l");
 if ($nama_hari == "Sunday") {
 echo "Minggu";
@@ -148,14 +148,14 @@ echo "Selasa";
 }
 ```
 
-<p>Maka, hasilnya akan seperti berikut.
+- Maka, hasilnya akan seperti berikut.
 
 ![Kondisi IF](img/kondisi_if.png)
 
 ## Kondisi Switch
-<p>Masukan kode berikut.
+- Masukan kode berikut.
 
-```bash
+```html
 $nama_hari = date("l");
 switch ($nama_hari) {
   case "Sunday":
@@ -172,14 +172,14 @@ echo "Sabtu";
 }
 ```
 
-<p>Maka, hasilnya akan seperti berikut.
+- Maka, hasilnya akan seperti berikut.
 
 ![Kondisi Switch](img/switch_case.png)
 
 ## Perulangan FOR
-<p>Masukan kode berikut.
+- Masukan kode berikut.
 
-```bash
+```html
 echo "Perulangan 1 sampai 10 <br />";
 for ($i=1; $i<=10; $i++) {
 echo "Perulangan ke: " . $i . '<br />';
@@ -190,14 +190,14 @@ echo "Perulangan ke: " . $i . '<br />';
 }
 ```
 
-<p>Maka, hasilnya akan seperti berikut.
+- Maka, hasilnya akan seperti berikut.
 
 ![Perulangan For](img/perulangan_for.png)
 
 ## Perulangan While
-<p>Masukan kode berikut.
+- Masukan kode berikut.
 
-```bash
+```html
 echo "Perulangan 1 sampai 10 <br />";
 $i=1;
 while ($i<=10) {
@@ -206,14 +206,14 @@ $i++;
 }
 ```
 
-<p>Maka, hasilnya akan seperti berikut.
+- Maka, hasilnya akan seperti berikut.
 
 ![Perulangan While](img/perulangan_while.png)
 
 ## Perulangan Do While
-<p>Masukan kode berikut.
+- Masukan kode berikut.
 
-```bash
+```html
 echo "Perulangan 1 sampai 10 <br />";
 $i=1;
 do {
@@ -222,16 +222,16 @@ $i++;
 } while ($i<=10);
 ```
 
-<p>Maka, hasilnya sama saja dengan perulangan sebelumnya.
+- Maka, hasilnya sama saja dengan perulangan sebelumnya.
 
 # Pertanyaan dan Tugas
 <p>Buatlah program PHP sederhana dengan menggunakan form input yang menampilkan nama, tanggal lahir dan pekerjaan. Kemudian tampilkan outputnya dengan menghitung umur berdasarkan inputan tanggal lahir. Dan pilihan pekerjaan dengan gaji yang berbeda-beda sesuai pilihan pekerjaan.
 
 ## Praktikum
-- Buat file index.php dalam direktori Praktikum agar terlihat rapih
+- Buat file `index.php` dalam direktori Praktikum agar terlihat rapih
 - Masukan kode berikut.
 
-```bash
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -356,7 +356,7 @@ $i++;
 </html>
 ```
 
-- Kemudian buat file style.css didalam folder yang sama agar mudah diakses
+- Kemudian buat file `style.css` didalam folder yang sama agar mudah diakses
 - Lalu, masukan kode berikut.
 
 ```bash
